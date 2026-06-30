@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muaz Bhutta — Cloud & Infrastructure Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<!-- ================= NAV ================= -->
+<header class="topbar">
+  <div class="topbar__brand">
+    <span class="brand__prompt">~$</span>
+    <span class="brand__name">muaz<span class="brand__dot">.</span>bhutta</span>
+  </div>
+  <nav class="topbar__nav">
+    <a href="#stack">stack</a>
+    <a href="#projects">projects</a>
+    <a href="#topology">topology</a>
+    <a href="#certs">certs</a>
+    <a href="#contact">contact</a>
+  </nav>
+  <div class="topbar__status">
+    <span class="status-dot"></span> available for hire — Riyadh, KSA
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="hero__left">
+      <p class="eyebrow">// infrastructure_engineer.profile</p>
+      <h1 class="hero__title">
+        I build the<br>
+        <span class="hero__title-accent">invisible layer</span><br>
+        servers run on.
+      </h1>
+      <p class="hero__lede">
+        Muaz Bhutta — Cloud & Network Infrastructure Engineer based in Riyadh.
+        CCNA-certified, AWS-trained, Linux-native. I design monitoring stacks,
+        secure VPN tunnels, and the dashboards that keep them honest.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#projects">view deployments →</a>
+        <a class="btn btn--ghost" href="#contact">get in touch</a>
+      </div>
+    </div>
+
+    <div class="hero__right">
+      <div class="terminal">
+        <div class="terminal__bar">
+          <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+          <span class="terminal__title">root@mj:~</span>
+        </div>
+        <div class="terminal__body">
+          <p><span class="t-prompt">$</span> whoami</p>
+          <p class="t-out">muaz_bhutta — cloud/infra engineer</p>
+          <p><span class="t-prompt">$</span> uptime --skills</p>
+          <p class="t-out">CCNA · AWS · Linux · Docker · Python</p>
+          <p><span class="t-prompt">$</span> ping riyadh-job-market.sa</p>
+          <p class="t-out">64 bytes: time=open status=actively_seeking</p>
+          <p><span class="t-prompt">$</span> systemctl status career</p>
+          <p class="t-out t-out--ok">● active (running) since 2023</p>
+          <p class="t-cursor"><span class="t-prompt">$</span> <span class="blink">▌</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STACK ================= -->
+  <section id="stack" class="stack">
+    <p class="section-label">01 / core_stack</p>
+    <h2 class="section-title">Tools I reach for at 2am</h2>
+
+    <div class="stack__grid">
+      <div class="stack-card">
+        <span class="stack-card__tag">networking</span>
+        <h3>CCNA Routing &amp; Switching</h3>
+        <p>OSPF (single &amp; multi-area), EIGRP, RIP, VLANs, static routing — built and broken on Packet Tracer until the CLI errors stopped surprising me.</p>
+      </div>
+      <div class="stack-card">
+        <span class="stack-card__tag">cloud</span>
+        <h3>AWS &amp; VPS Infrastructure</h3>
+        <p>EC2, IAM, networking fundamentals, plus hands-on VPS administration — provisioning, hardening, and monitoring production-style boxes solo.</p>
+      </div>
+      <div class="stack-card">
+        <span class="stack-card__tag">systems</span>
+        <h3>Linux Administration</h3>
+        <p>User &amp; permission management, process control, package management, SSH hardening, and Bash scripting for repeatable ops.</p>
+      </div>
+      <div class="stack-card">
+        <span class="stack-card__tag">observability</span>
+        <h3>Grafana + Prometheus</h3>
+        <p>Docker Compose monitoring stacks with Node Exporter — dashboards that actually tell you something is wrong before a user does.</p>
+      </div>
+      <div class="stack-card">
+        <span class="stack-card__tag">security</span>
+        <h3>VPN Engineering</h3>
+        <p>WireGuard via WGDashboard, OpenVPN client/server setup, cipher &amp; TAP driver troubleshooting across Windows and iOS clients.</p>
+      </div>
+      <div class="stack-card">
+        <span class="stack-card__tag">automation</span>
+        <h3>Python &amp; APIs</h3>
+        <p>Flask-based real-time monitoring APIs with Server-Sent Events, Conda environments, scripting for infra automation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="projects">
+    <p class="section-label">02 / deployments</p>
+    <h2 class="section-title">Things that are actually running</h2>
+
+    <div class="projects__list">
+
+      <article class="project">
+        <div class="project__index">P1</div>
+        <div class="project__body">
+          <h3>Self-Hosted Observability Stack</h3>
+          <p class="project__meta">Docker Compose · Grafana · Prometheus · Node Exporter</p>
+          <p class="project__desc">
+            Full monitoring pipeline deployed on a personal VPS — real-time metrics
+            collection via Node Exporter, scraped by Prometheus, visualized in
+            custom Grafana dashboards. Built to mirror production observability
+            patterns used in real infra teams.
+          </p>
+          <div class="project__tags">
+            <span>docker-compose</span><span>grafana</span><span>prometheus</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project__index">P2</div>
+        <div class="project__body">
+          <h3>Dual-VPN Secure Access Layer</h3>
+          <p class="project__meta">WireGuard · OpenVPN · WGDashboard</p>
+          <p class="project__desc">
+            Parallel VPN infrastructure for secure remote access — WireGuard
+            managed through WGDashboard for speed, OpenVPN for client
+            compatibility. Diagnosed and resolved TAP driver and cipher
+            mismatch issues across Windows and iOS clients.
+          </p>
+          <div class="project__tags">
+            <span>wireguard</span><span>openvpn</span><span>linux</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project__index">P3</div>
+        <div class="project__body">
+          <h3>Real-Time System Monitoring API</h3>
+          <p class="project__meta">Flask · Server-Sent Events · Python 3.12</p>
+          <p class="project__desc">
+            A lightweight Flask API streaming live server metrics to clients
+            using Server-Sent Events — no polling, no waste. Built and tested
+            inside an isolated Conda environment for clean dependency control.
+          </p>
+          <div class="project__tags">
+            <span>flask</span><span>sse</span><span>python</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project__index">P4</div>
+        <div class="project__body">
+          <h3>Static Web Deployment Pipeline</h3>
+          <p class="project__meta">Caddy · Custom Domain · VPS</p>
+          <p class="project__desc">
+            End-to-end deployment of a static web application on a custom
+            domain, served through Caddy for automatic HTTPS and clean reverse
+            proxy configuration.
+          </p>
+          <div class="project__tags">
+            <span>caddy</span><span>https</span><span>deployment</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ================= TOPOLOGY (signature element) ================= -->
+  <section id="topology" class="topology">
+    <p class="section-label">03 / network_topology</p>
+    <h2 class="section-title">How the pieces talk to each other</h2>
+    <p class="topology__sub">A simplified map of the lab infrastructure I run and maintain.</p>
+
+    <div class="topo-diagram">
+      <svg viewBox="0 0 900 360" xmlns="http://www.w3.org/2000/svg" class="topo-svg">
+        <!-- connecting lines -->
+        <g class="topo-lines">
+          <line x1="450" y1="60" x2="160" y2="170"></line>
+          <line x1="450" y1="60" x2="450" y2="170"></line>
+          <line x1="450" y1="60" x2="740" y2="170"></line>
+          <line x1="160" y1="170" x2="160" y2="290"></line>
+          <line x1="450" y1="170" x2="450" y2="290"></line>
+          <line x1="740" y1="170" x2="740" y2="290"></line>
+        </g>
+        <!-- core node -->
+        <g class="topo-node topo-node--core">
+          <circle cx="450" cy="60" r="34"></circle>
+          <text x="450" y="65" text-anchor="middle">VPS</text>
+        </g>
+        <!-- mid nodes -->
+        <g class="topo-node">
+          <circle cx="160" cy="170" r="28"></circle>
+          <text x="160" y="175" text-anchor="middle">VPN</text>
+        </g>
+        <g class="topo-node">
+          <circle cx="450" cy="170" r="28"></circle>
+          <text x="450" y="175" text-anchor="middle">Docker</text>
+        </g>
+        <g class="topo-node">
+          <circle cx="740" cy="170" r="28"></circle>
+          <text x="740" y="175" text-anchor="middle">Caddy</text>
+        </g>
+        <!-- leaf nodes -->
+        <g class="topo-node topo-node--leaf">
+          <circle cx="160" cy="290" r="22"></circle>
+          <text x="160" y="294" text-anchor="middle" class="leaf-text">clients</text>
+        </g>
+        <g class="topo-node topo-node--leaf">
+          <circle cx="450" cy="290" r="22"></circle>
+          <text x="450" y="294" text-anchor="middle" class="leaf-text">grafana</text>
+        </g>
+        <g class="topo-node topo-node--leaf">
+          <circle cx="740" cy="290" r="22"></circle>
+          <text x="740" y="294" text-anchor="middle" class="leaf-text">domain</text>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ================= CERTS ================= -->
+  <section id="certs" class="certs">
+    <p class="section-label">04 / credentials</p>
+    <h2 class="section-title">Paper trail</h2>
+    <div class="certs__row">
+      <div class="cert-pill">CCNA — Routing &amp; Switching</div>
+      <div class="cert-pill">AWS — Cloud Practitioner Track</div>
+      <div class="cert-pill">Linux System Administration</div>
+      <div class="cert-pill">BS Computer Science</div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="contact">
+    <p class="section-label">05 / connect</p>
+    <h2 class="section-title">Let's deploy something together.</h2>
+    <p class="contact__lede">
+      Open to Infrastructure, Cloud, Network, and Junior DevOps roles in
+      Saudi Arabia. Iqama holder, based in Riyadh.
+    </p>
+    <div class="contact__links">
+      <a href="mailto:hello@muazbhutta.online" class="contact-link">
+        <span class="contact-link__label">email</span>
+        <span class="contact-link__value">hello@muazbhutta.online</span>
+      </a>
+      <a href="https://muazbhutta.online" class="contact-link" target="_blank" rel="noopener">
+        <span class="contact-link__label">site</span>
+        <span class="contact-link__value">muazbhutta.online</span>
+      </a>
+      <a href="https://linkedin.com" class="contact-link" target="_blank" rel="noopener">
+        <span class="contact-link__label">linkedin</span>
+        <span class="contact-link__value">/in/muazbhutta</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 Muaz Bhutta · built from scratch, not a template · status: <span class="status-dot status-dot--small"></span> online</p>
+</footer>
+
+</body>
+</html>
